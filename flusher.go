@@ -39,7 +39,7 @@ type MultiFlusher struct {
 }
 
 func (m *MultiFlusher) Write(p []byte) (n int, err error) {
-	for w, _ := range m.writers {
+	for w := range m.writers {
 		w.Write(p)
 		w.Flush()
 	}

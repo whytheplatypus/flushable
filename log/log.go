@@ -1,3 +1,5 @@
+// Package log serves logs over http
+//
 // Inspired by net/http/pprof/
 //
 // 	import _ "github.com/whytheplatypus/flushable/log
